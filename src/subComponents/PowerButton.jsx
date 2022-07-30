@@ -1,10 +1,8 @@
 // Home button
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { PowerBtn } from "../components/AllSVGs";
-
 const Power = styled.button`
 position: fixed;
 top: 2rem;

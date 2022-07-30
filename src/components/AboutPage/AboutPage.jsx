@@ -1,8 +1,12 @@
 import React from 'react'
+import AnchorComponent from '../../subComponents/Anchor'
 
 const AboutPage = () => {
   return (
-    <div>AboutPage Component/Page</div>
+    <div>
+      text
+      <AnchorComponent />
+    </div>
   )
 }
 
