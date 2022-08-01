@@ -23,7 +23,7 @@ const Icons = styled.div`
 const Line = styled.span`
   width: 2px;
   height: 8rem;
-  background-color: ${props => props.click ? darkTheme.text : darkTheme.body};
+  background-color: ${props => props.theme === "dark" ? darkTheme.text : darkTheme.body};
 `;
 
 const SocialIcons = (props) => {
@@ -38,7 +38,7 @@ const SocialIcons = (props) => {
           <Github
             width={25}
             height={25}
-            fill={props.click ? darkTheme.text : darkTheme.body}
+            fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
           />
         </NavLink>
       </div>
@@ -51,7 +51,7 @@ const SocialIcons = (props) => {
           <Twitter
             width={25}
             height={25}
-            fill={props.click ? darkTheme.text : darkTheme.body}
+            fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
           />
         </NavLink>
       </div>
@@ -64,7 +64,7 @@ const SocialIcons = (props) => {
           <Facebook
             width={25}
             height={25}
-            fill={props.click ? darkTheme.text : darkTheme.body}
+            fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
           />
         </NavLink>
       </div>
@@ -77,11 +77,11 @@ const SocialIcons = (props) => {
           <YouTube
             width={25}
             height={25}
-            fill={props.click ? darkTheme.text : darkTheme.body}
+            fill={props.theme === "dark" ? darkTheme.text : darkTheme.body}
           />
         </NavLink>
       </div>
-      <Line click={props.click}/>
+      <Line theme={props.theme}/>
     </Icons>
   );
 };

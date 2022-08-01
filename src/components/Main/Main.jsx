@@ -131,8 +131,8 @@ const Main = () => {
       <DarkDiv click={click} />
       <Container>
         <PowerButton />
-        <LogoComponent click={click} />
-        <SocialIcons click={click} />
+        <LogoComponent theme={click ? 'dark' :'light'} />
+        <SocialIcons theme={click ? 'dark' :'light'} />
         <Center click={click}>
           <YinYang
             onClick={() => handleClick()}

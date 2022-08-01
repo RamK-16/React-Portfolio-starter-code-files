@@ -2,6 +2,9 @@ import React from 'react'
 import Particles from 'react-particles-js'
 import styled from 'styled-components'
 
+// particle config files
+import configDark from '../config/particlesjs-config.json';
+import configLight from '../config/particlesjs-config-light.json';
 
 
 const Box = styled.div`
@@ -14,10 +17,10 @@ z-index: 0;
 
 `
 
-const PatricleComponent = () => {
+const PatricleComponent = (props) => {
   return (
     <Box>
-      <Particles />
+      <Particles style={{posiotion: "absolute", top: 0}} params={props.theme === "light" ? configLight : configDark}/>
     </Box>
   )
 }
